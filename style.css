@@ -1,0 +1,11 @@
+body{
+    background-color: red;
+}
+.container{
+    background-color: black;
+    color: white;
+}
+button{
+    background-color: cyan;
+    color: black;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Random background Color chnage</title>
+</head>
+<body>
+    <div class="container">
+        <h2>The Current background color is: <span id="sp">Red</span></h2>
+        <button class="button">Change the backGround Color</button>
+    </div>
+
+    <script>
+        const color=["green","red","yellow","blue","white"]
+        var button=document.querySelector('.button')
+        var sp=document.getElementById('sp')
+        button.addEventListener('click',function(){
+            var k=Math.floor(Math.random()*color.length)
+            document.body.style.backgroundColor=color[k];
+            sp.textContent=color[k];
+        })
+       
+    </script>
+</body>
+</html>
